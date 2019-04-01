@@ -1,0 +1,8 @@
+licenses(["notice"])
+
+cc_library(
+    name = "opencv2",
+    hdrs = glob(["opencv2/**/*.hpp", "opencv2/**/*.h"]),
+    linkstatic = 1,
+    visibility = ["//visibility:public"],
+)
